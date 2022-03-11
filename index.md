@@ -1,16 +1,20 @@
-## CSE 455 Final Project
+# CSE 455 Final Project
 
-### Problem Statement
+## Intro
 
-### Background
+## Problem Statement
 
-### Method
+## Dataset
+
+## Background
+
+## Method
 
 ### Results
 
-### Conclusions
+## Conclusions
 
-### References
+## References
 
 ```markdown
 Syntax highlighted code block
