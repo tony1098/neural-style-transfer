@@ -4,9 +4,9 @@
 
 In this project, we look at the problem of Neural Style Transfer. In the Neural Style Transfer problem, we have two input images, a context image and a style image. The goal is to take the "style" of the style image and apply it on our context image using Convolutional Neural Networks. 
 
-We first play around with the basic implementation from Gatys et al., A Neural Algorithm of Artistic Style, 2015 using pretrained VGG-19. We also try exploring the impact of the parameters such as the weighting between style and context, or how the style weighting on shallow or deep layers of the network may affect the results. We then compare and see how the results differ when when we use a different network other than VGG.
+We first take a look and play around with the basic implementation from Gatys et al., A Neural Algorithm of Artistic Style, 2015 which uses transfer learning by using pretrained VGG-19. We also try exploring the impact of the parameters such as the weighting between style and context, how the style weighting on shallow or deep layers of the network may affect the results, and how different optimization methods speed up/slown down training time. We then compare and see how the results differ when when we use a different network other than VGG.
 
-We then run the algorithm on a video. To increase video stability, we add temporal loss.
+Finally, we run the algorithm on a video. To increase video stability, we add temporal loss.
 
 ## Dataset
 
@@ -14,9 +14,17 @@ We then run the algorithm on a video. To increase video stability, we add tempor
 
 ## Method
 
-We first play around with the basic implementation from Gatys et al., A Neural Algorithm of Artistic Style, 2015 using pretrained VGG-19.
+Neural Style Transfer tries to minimize a loss function comprised of two terms, a context loss and a style loss. The context loss is rather straightforward - it's just the mean squared error of the feature map between the context image and generated image at a specific layer in the pretrained VGG-19 network (CAN PLAY AROUND WITH THIS!!!!). 
+
+For the style of an image, we first compute Gram matrices using different feature maps in the VGG network. We concatenate the set of Gram matrices which then represent the style of an image. This is because the Gram matrix represent the covariance between different features/textures for different layers. We then take the concatenated Gram matrices for the context image and generated image and compute the mean squared error.
+
+The following experiments are done based on the basic implementation of the paper from Gatys et al., A Neural Algorithm of Artistic Style, 2015 which can be found [here](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html). 
 
 ### Results
+
+### Code
+
+See [Google Colab notebook](PUT LINK!!!!!!!!!!!!)
 
 ## Summary
 
