@@ -1,8 +1,12 @@
 # CSE 455 Final Project
 
-## Intro
-
 ## Problem Statement
+
+In this project, we look at the problem of Neural Style Transfer. In the Neural Style Transfer problem, we have two input images, a context image and a style image. The goal is to take the "style" of the style image and apply it on our context image using Convolutional Neural Networks. 
+
+We first play around with the basic implementation from Gatys et al., A Neural Algorithm of Artistic Style, 2015 using pretrained VGG-19. We also try exploring the impact of the parameters such as the weighting between style and context, or how the style weighting on shallow or deep layers of the network may affect the results. We then compare and see how the results differ when when we use a different network other than VGG.
+
+We then run the algorithm on a video. To increase video stability, we add temporal loss.
 
 ## Dataset
 
@@ -10,11 +14,16 @@
 
 ## Method
 
+We first play around with the basic implementation from Gatys et al., A Neural Algorithm of Artistic Style, 2015 using pretrained VGG-19.
+
 ### Results
 
-## Conclusions
+## Summary
 
 ## References
+
+[Basic Neural Style Transfer implementation](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html) of Gatys et al., A Neural Algorithm of Artistic Style, 2015
+
 
 ```markdown
 Syntax highlighted code block
