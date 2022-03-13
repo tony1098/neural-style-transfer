@@ -4,7 +4,7 @@
 
 In this project, we look at the problem of Neural Style Transfer. In the Neural Style Transfer problem, we have two input images, a content image and a style image. The goal is to take the style of the style image and apply it on our content image using Convolutional Neural Networks. 
 
-We first take a look at the paper and play around with the implementation from Gatys et al., A Neural Algorithm of Artistic Style, 2015 which uses transfer learning by using pretrained VGG-19. We try exploring the impact of the parameters such as the weighting between style and content, how the style weighting on shallow or deep layers of the network may affect the results. We then compare and see how the results differ when when we use a different network other than VGG.
+We first take a look at the paper and play around with the implementation from Gatys et al., A Neural Algorithm of Artistic Style, 2015 which uses transfer learning by using pretrained VGG-19. We try exploring the impact of the parameters such as the weighting between style and content or how the style weighting on shallow or deep layers of the network may affect the results. We then compare and see how the results differ when when we use a different network other than VGG.
 
 Finally, we run the algorithm on a video. To increase video stability, we add temporal loss.
 
