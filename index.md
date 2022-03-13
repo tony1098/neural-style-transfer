@@ -19,6 +19,7 @@ Neural Style Transfer tries to minimize a loss function comprised of two terms, 
 For the style of an image, we first compute Gram matrices using different feature maps in the VGG network. We concatenate the set of Gram matrices which then represent the style of an image. This is because the Gram matrix represent the covariance between different features/textures for different layers. We then take the concatenated Gram matrices for the content image and generated image and compute the mean squared error.
 
 The following experiments are done based on the implementation of the paper from Gatys et al., A Neural Algorithm of Artistic Style, 2015 which can be found [here](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html). We take an image of the UW Suzzallo Library as the content image, the Van Gogh painting The Starry Night as the style image, and we get the generated image on the right.
+![Image](images/suzzallo_starry_night.jpg)
 
 ### Results
 
