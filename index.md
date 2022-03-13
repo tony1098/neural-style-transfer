@@ -21,8 +21,8 @@ For the style of an image, we first compute Gram matrices using different featur
 The following experiments are done based on the basic implementation of the paper from Gatys et al., A Neural Algorithm of Artistic Style, 2015 which can be found [here](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html). We take an image of the UW Suzzallo Library as the content image, the Van Gogh painting The Starry Night as the style image, and we get the generated image on the right after running 300 iterations of gradient descent.
 ![Image](images/suzzallo_starry_night.jpg)
 
-We then try tweaking the weighting between the content and style losses. α represents the weighting of the content loss while β represents the weighting of the style loss. Previously, we set α/β = 10^-6. As we can see in the experiment below, when α/β is small, most of the content image is preserved, while with large α/β, the generated image strongly matches the style image.
-![Image](images/alph_beta_comparison.jpg)
+We then try tweaking the weighting between the content and style losses. α represents the weighting of the content loss while β represents the weighting of the style loss. Previously, we set α/β = 10^-6. As we can see in the experiment below, when α/β is small, most of the content image is preserved, while with large α/β, we loose more details of the structure in the content image.
+![Image](images/alpha_beta_comparison.jpg)
 
 Next, we try changing the 
 
