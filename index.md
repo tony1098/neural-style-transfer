@@ -20,11 +20,11 @@ The following experiments are done based on the [reference implementation](https
 
 ![Image](images/suzzallo_starry_night.jpg)
 
-We then try tweaking the weighting between the content and style losses. α represents the weighting of the content loss while β represents the weighting of the style loss. Previously, we set α/β = 10^-6. As we can see in the experiment below, when α/β is small, most of the content image is preserved, while with large α/β, we lose more details of the structure in the content image.
+We then try tweaking the weighting between the content and style losses. α represents the weighting of the content loss while β represents the weighting of the style loss. Previously, we set α/β = 10^-6. As we can see in the experiment below, when α/β is small, most of the content image is preserved, while with large α/β, we lose almost all of the details of the structure in the content image and only the wavy patterns are left.
 
 ![Image](images/alpha_beta_comparison.jpg)
 
-Next, we change the the layers in which the style loss function is computed for. Previously, we used the first five convolutional layers of the VGG-19 network in the style loss. We compare that to using the first convolutional layer and the fifth convolution layer in the style loss function. We can see that when using only the first layer (left image), the generated image is mostly just tinted blue, so we can reasonably guess that the first convolutional layer in the network mostly detects blue colors. If we only use the fifth layer (right image), the generated image contains a lot of wavey brushstrokes, so we can infer that the fifth convolutional layer detects wavey patterns. When using the set of the first five convolutional layers together (center image), we see a better blend of the structure in the content image as well as the wavey patterns.
+Next, we change the the layers in which the style loss function is computed for. Previously, we used the first five convolutional layers of the VGG-19 network in the style loss. We compare that to using the first convolutional layer and the fifth convolution layer in the style loss function. We can see that when using only the first layer (left image), the generated image is mostly just tinted blue, so we can reasonably guess that the first convolutional layer in the network mostly detects blue colors. If we only use the fifth layer (right image), the generated image contains a lot of wavy brushstrokes, so we can infer that the fifth convolutional layer detects wavy patterns. When using the set of the first five convolutional layers together (center image), we see a better blend of the structure in the content image as well as the wavy patterns.
 
 ![Image](images/style_layer_comparison.jpg)
 
