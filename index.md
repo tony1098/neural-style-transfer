@@ -8,7 +8,7 @@ We first take a look at the paper and play around with the implementation from G
 
 ## Data
 
-We use [image of the UW Suzzallo Library](https://upload.wikimedia.org/wikipedia/commons/1/10/MK03214_University_of_Washington_Suzzallo_Library.jpg) and [image of The Starry Night by Van Gogh](https://www.vangoghgallery.com/img/starry_night_full.jpg) which are available in the links. They are cropped and resized to the same width and height dimensions.
+We use [image of the UW Suzzallo Library](https://upload.wikimedia.org/wikipedia/commons/1/10/MK03214_University_of_Washington_Suzzallo_Library.jpg) and [image of The Starry Night by Van Gogh](https://www.vangoghgallery.com/img/starry_night_full.jpg) which are available via the links. They are cropped and resized to the same width and height dimensions.
 
 ## Method/Results
 
@@ -43,3 +43,5 @@ In this project, we covered Neural Style Transfer. For the implementation, it wa
 - Gatys *et al.*, A Neural Algorithm of Artistic Style, 2015
 
 - [Neural Style Transfer implementation](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html)
+
+- [Darknet reference](https://pjreddie.com/darknet/imagenet/#reference)
