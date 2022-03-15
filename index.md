@@ -28,7 +28,7 @@ Next, we change the the layers in which the style loss function is computed for.
 
 ![Image](images/style_layer_comparison.jpg)
 
-Finally, we use a modified version of the Darknet discussed in class instead of the pretrained VGG-19 network. Note that the Darkent is a MUCH smaller network which contains 5 convolutional layers with ReLU as the activation function and max pooling layers in between. We load the [here](https://pjreddie.com/media/files/checkpoint-19.pkl) which was pretrained on ImageNet. It is hard to get Darknet to mimic the wavey patterns of the style image despite putting a lot of weight on the style loss which is probably due to its small network size which could result in capturing such wavey features poorly. Nonetheless, it is interesting to look at the generated image of such a small network compared to that of VGG-19. Here, we set α/β = 10^-8. 
+Finally, we use a modified version of the Darknet discussed in class instead of the pretrained VGG-19 network. Note that the Darkent is a MUCH smaller network which contains 5 convolutional layers with ReLU as the activation function and max pooling layers in between. We load the [checkpoint](https://pjreddie.com/media/files/checkpoint-19.pkl) which was pretrained on ImageNet. Despite being a much smaller network, we can get Darknet to generate images that mimic the wavey patterns of the style image. Note that the results for using layer 5 for the style loss looks extremely similar to the results obtained on VGG-19 also using layer 5 for the style loss. Here, we set α/β = 10^-8 and the content loss to layer 2.
 
 ![Image](images/darknet_output.jpg)
 
