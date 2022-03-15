@@ -6,6 +6,10 @@ In this project, we look at the problem of Neural Style Transfer. In the Neural 
 
 We first look at the paper and play around with the implementation from Gatys *et al.*, A Neural Algorithm of Artistic Style, 2015 which uses transfer learning by using pretrained VGG-19. We then make some modifications to the reference implementation and try exploring the impact of the parameters such as the weighting between style and content or how the style weighting on shallow or deep layers of the network may affect the results. Finally, we compare and see how the results differ when when we use a different and much smaller network, i.e., Darknet instead of VGG, to the transfer learning process.
 
+## Video
+
+Please refer to [video](https://youtu.be/PDf8e2uEPCM) for a brief overview of the project.
+
 ## Data
 
 We use [image of the UW Suzzallo Library](https://upload.wikimedia.org/wikipedia/commons/1/10/MK03214_University_of_Washington_Suzzallo_Library.jpg) and [image of The Starry Night by Van Gogh](https://www.vangoghgallery.com/img/starry_night_full.jpg) which are available via the links. They are cropped and resized to the same width and height dimensions.
